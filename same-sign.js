@@ -26,7 +26,8 @@ const sameSign = (a, b) => {
   console.log(sameSign(12, 15))
   console.log(sameSign(-12, -25))
   console.log(sameSign(12, -34))
-const assert = require('assert')
+
+  const assert = require('assert')
 
 assert.strictEqual(typeof sameSign, 'function')
 assert.strictEqual(sameSign.length, 2)

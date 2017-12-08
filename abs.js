@@ -12,6 +12,7 @@
 
 // Your code :
 const abs = sany => ( sany > 0 ? sany : - sany )
+
 //* Begin of tests
 const assert = require('assert')
 

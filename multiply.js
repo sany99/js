@@ -10,6 +10,7 @@
  */
 
 // Your code :
+<<<<<<< Updated upstream
 const multiply = (a, b) => {
     if(a > 0 && b > 0){
         let i = 1
@@ -68,6 +69,10 @@ const multiply = (a, b) => {
     }
 }
 //
+=======
+const multiply = ( a ,b ) => Math.imul (a , b )
+
+>>>>>>> Stashed changes
 console.log(multiply(23, 0), 0)
 const assert = require('assert')
 
@@ -79,8 +84,11 @@ assert.strictEqual(multiply.toString().includes('/'), false)
 assert.strictEqual(multiply(34, 78), 2652)
 assert.strictEqual(multiply(123, 0), 0)
 assert.strictEqual(multiply(0, -230), 0)
+<<<<<<< Updated upstream
 assert.strictEqual(multiply(0, 0), 0)
 assert.strictEqual(multiply(123, -22), -2706)
 assert.strictEqual(multiply(-22, 123), -2706)
 assert.strictEqual(multiply(-22, -123), 2706)
+=======
+>>>>>>> Stashed changes
 // End of tests */
