@@ -9,7 +9,7 @@
  */
 
 // Your code :
-
+const getLast = queen => queen[ queen.length - 1 ]
 //* Begin of tests
 const assert = require('assert')
 

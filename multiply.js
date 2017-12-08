@@ -10,8 +10,65 @@
  */
 
 // Your code :
+const multiply = (a, b) => {
+    if(a > 0 && b > 0){
+        let i = 1
+        if(i < Math.abs(b)){
+            let resultat = a
+                while(i < Math.abs(b)){
+                    resultat = resultat + a 
+                    i++
+                }
+                return resultat
+            }
+    }
 
-//* Begin of tests
+    else if(a < 0 && b < 0){
+        let i = 1
+        if(i < Math.abs(b)){
+            let resultat = a
+                while(i < Math.abs(b)){
+                    resultat = resultat + a 
+                    i++
+                }
+                return -resultat
+            }
+    }
+
+    if(a < 0 && b > 0){
+        let i = 1
+        if(i < Math.abs(b)){
+            let resultat = a
+                while(i < Math.abs(b)){
+                    resultat = resultat + a 
+                    i++
+                }
+                return resultat
+            }
+    }
+
+    else if((a === 0) && (b === 0)){
+        let resultat = 0
+            return resultat
+    }
+
+    else if((a === 0) || (b === 0)){
+        let resultat = 0
+            return resultat
+    }
+
+    else{
+        let resultat = b
+        let i = 1
+            while(i < Math.abs(a)){
+            resultat = resultat + b
+                i++
+            }
+        return resultat
+    }
+}
+//
+console.log(multiply(23, 0), 0)
 const assert = require('assert')
 
 assert.strictEqual(typeof multiply, 'function')

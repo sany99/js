@@ -7,7 +7,7 @@
  * @notions Data-Structures, Get
  * @next get-last
  */
-
+const getFirst = pretty => pretty[0]
 // Your code :
 
 //* Begin of tests

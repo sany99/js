@@ -9,8 +9,23 @@
  */
 
 // Your code :
+const sameSign = (a, b) => {
+  if((a * b) > 0){
+      return true
+  }
 
-//* Begin of tests
+  else if((a === 0) && (b === 0)){
+      return true
+  }
+
+  else{
+      return false
+  }
+}
+
+  console.log(sameSign(12, 15))
+  console.log(sameSign(-12, -25))
+  console.log(sameSign(12, -34))
 const assert = require('assert')
 
 assert.strictEqual(typeof sameSign, 'function')

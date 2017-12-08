@@ -4,14 +4,14 @@
  * Create the function `abs` that takes one number argument
  * and returns it's absolute value.
  * You must not just use `Math.abs`, make your own.
- * see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+ * see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Glob al_Objects/Math/abs
  *
  * @notions Functions, Ternary
  * @next max
  */
 
 // Your code :
-
+const abs = sany => ( sany > 0 ? sany : - sany )
 //* Begin of tests
 const assert = require('assert')
 

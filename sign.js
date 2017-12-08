@@ -12,7 +12,15 @@
  */
 
 // Your code :
-
+const s = 23
+const sign = s => {
+    if(s > 0)
+      return 1
+    if (s < 0)
+      return -1
+    if (s === 0)
+      return 0
+}
 //* Begin of tests
 const assert = require('assert')
 
