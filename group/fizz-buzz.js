@@ -16,7 +16,33 @@
  *
  * Utilisez console.log pour afficher.
  */
+const fizzBuzz = Myvariable =>{
+    
+    while(Myvariable < 100){
+        Myvariable++
+        console.log(Myvariable)
+        if (Myvariable % 3 == 0) {
+            console.log('Fizz')
+        }
+        if (Myvariable % 5 == 0) {
+            console.log('Buzz')
+        }
+        if (Myvariable % 3 == 0 && Myvariable % 5 == 0) {
+            console.log('FizzBuzz')
+        }
+    } 
+    
+}
 
-
+fizzBuzz(0)
+                    
 // You must write your own tests
-throw Error('No tests !')
+
+const assert = require('assert')
+
+assert.strictEqual(typeof fizzBuzz, 'function' )
+assert.strictEqual(fizzBuzz.length, 1)
+assert.strictEqual(fizzBuzz.toString().includes('Math.fizzBuzz'), false)
+assert.notStrictEqual(fizzBuzz, Math.fizzBuzz)
+
+/*throw Error('No test !')*/

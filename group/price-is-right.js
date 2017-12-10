@@ -14,5 +14,20 @@
  */
 
 
+
 // You must write your own tests
+
+const getCostCount = number => {
+
+    
+}
+
+const assert = require('assert')
+
+assert.strictEqual(typeof (getCostCount, getCostMl), 'function' )
+assert.strictEqual(getCostCount.length, 1)
+assert.strictEqual(getCostMl.length, 1)
+
+
+ 
 throw Error('No tests !')
