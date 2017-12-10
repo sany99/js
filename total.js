@@ -7,7 +7,13 @@
  * @next multiply
  */
 
-
+const total = sany => {
+    let resultat = 0 
+    for ( let x = 0; x < sany.length ; x++){
+        resultat += sany[x]
+    } 
+    return resultat
+}
 //* Begin of tests
 const assert = require('assert')
 

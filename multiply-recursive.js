@@ -11,11 +11,21 @@
  */
 
 // Your code :
+const multiply = (a, b) => {
+    if (b === 0) {
+      return 0
+    }
+    if (b > 0) {
+      return a + multiply(a, b - 1)
+    }
+    if (b < 0) {
+      return -multiply(a, -b)
+    }
+  }
 
-//* Begin of tests
-const assert = require('assert')
+//const assert = require('assert')
 
-assert.strictEqual(typeof multiply, 'function')
+assert.strictEqual(typeof multiply, 'function') 
 assert.strictEqual(multiply.length, 2)
 assert.strictEqual(multiply.toString().includes('Math.imul'), false)
 assert.strictEqual(multiply.toString().includes('while'), false)

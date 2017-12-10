@@ -10,70 +10,17 @@
  */
 
 // Your code :
-<<<<<<< Updated upstream
 const multiply = (a, b) => {
-    if(a > 0 && b > 0){
-        let i = 1
-        if(i < Math.abs(b)){
-            let resultat = a
-                while(i < Math.abs(b)){
-                    resultat = resultat + a 
-                    i++
-                }
-                return resultat
-            }
-    }
-
-    else if(a < 0 && b < 0){
-        let i = 1
-        if(i < Math.abs(b)){
-            let resultat = a
-                while(i < Math.abs(b)){
-                    resultat = resultat + a 
-                    i++
-                }
-                return -resultat
-            }
-    }
-
-    if(a < 0 && b > 0){
-        let i = 1
-        if(i < Math.abs(b)){
-            let resultat = a
-                while(i < Math.abs(b)){
-                    resultat = resultat + a 
-                    i++
-                }
-                return resultat
-            }
-    }
-
-    else if((a === 0) && (b === 0)){
-        let resultat = 0
-            return resultat
-    }
-
-    else if((a === 0) || (b === 0)){
-        let resultat = 0
-            return resultat
-    }
-
-    else{
-        let resultat = b
-        let i = 1
-            while(i < Math.abs(a)){
-            resultat = resultat + b
-                i++
-            }
-        return resultat
-    }
-}
-//
-=======
-const multiply = ( a ,b ) => Math.imul (a , b )
-
->>>>>>> Stashed changes
-console.log(multiply(23, 0), 0)
+    let result = 0
+    let count = 0
+    while (count < Math.abs(b)){
+    result = result + Math.abs(a)
+    count = count + 1
+  }    
+    result = Math.sign(a) === Math.sign(b) ? result : -result
+    return result
+  }
+//* Begin of tests
 const assert = require('assert')
 
 assert.strictEqual(typeof multiply, 'function')
@@ -84,11 +31,8 @@ assert.strictEqual(multiply.toString().includes('/'), false)
 assert.strictEqual(multiply(34, 78), 2652)
 assert.strictEqual(multiply(123, 0), 0)
 assert.strictEqual(multiply(0, -230), 0)
-<<<<<<< Updated upstream
 assert.strictEqual(multiply(0, 0), 0)
 assert.strictEqual(multiply(123, -22), -2706)
 assert.strictEqual(multiply(-22, 123), -2706)
 assert.strictEqual(multiply(-22, -123), 2706)
-=======
->>>>>>> Stashed changes
 // End of tests */

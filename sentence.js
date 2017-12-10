@@ -6,7 +6,10 @@
  *
  * @next words
  */
-
+ const sentence = arr => {
+    const result = arr.join(' ')
+    return result
+}
 
 //* Begin of tests
 const assert = require('assert')

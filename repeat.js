@@ -8,7 +8,15 @@
  *
  * @next sentence
  */
-
+const repeat = ( s, q ) => {
+    let count = 1
+    let result = ''
+    while ( count <= q ){
+        result = s + result
+        count++
+    }
+    return result
+}
 //* Begin of tests
 const assert = require('assert')
 
